@@ -941,7 +941,7 @@ class PHPExcel_Reader_Excel2007 extends PHPExcel_Reader_Abstract implements PHPE
 							}
 
 							$conditionals = array();
-							if (!$this->_readDataOnly && $xmlSheet && $xmlSheet->conditionalFormatting) {
+							if (!$this->_readDataOnly && $xmlSheet && $xmlSheet->conditionalFormatting && false) {
 								foreach ($xmlSheet->conditionalFormatting as $conditional) {
 									foreach ($conditional->cfRule as $cfRule) {
 										if (
